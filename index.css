@@ -168,12 +168,12 @@ header table {
     background-size:cover;
     background-repeat:no-repeat;
 }
-#work {
+#art {
     width:92vw;
     padding:6vh 4vw;
     font-weight:bold;
 }
-#work h1 {
+#art h1 {
     padding:5px 0px;
     border-bottom:4px solid rgb(72, 118, 201);
     width:6%;
@@ -364,7 +364,7 @@ button:focus {
     #contact form textarea {
         width:90%;
     }
-    #work h1 {
+    #art h1 {
         width:19%;
     }
     #bio h1 {
