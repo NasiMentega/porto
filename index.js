@@ -64,4 +64,41 @@ $(document).ready(function(){
        } 
       });
   });
+
+  let slideIndices = [1, 1, 1]; // Initialize an array of indices for each slideshow
+  let slideId = ["games1", "games2", "games3"]; // Corresponding slideshow container IDs
+  
+  // Initialize the slides
+  for (let i = 0; i < slideId.length; i++) {
+      showSlides(1, i);
+  }
+  
+  function plusSlides(n, no) {
+      showSlides(slideIndices[no] += n, no);
+  }
+  
+  function currentSlide(n, no) {
+      showSlides(slideIndices[no] = n, no);
+  }
+  
+  function showSlides(n, no) {
+      let i;
+      let slides = document.querySelectorAll(`#${slideId[no]} .mySlides`);
+      let dots = document.querySelectorAll(`#${slideId[no]} .dot`);
+  
+      if (n > slides.length) {
+          slideIndices[no] = 1;
+      }
+      if (n < 1) {
+          slideIndices[no] = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndices[no] - 1].style.display = "block";
+      dots[slideIndices[no] - 1].className += " active";
+  }
   
