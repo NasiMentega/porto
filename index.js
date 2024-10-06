@@ -65,7 +65,7 @@ $(document).ready(function(){
       });
   });
 
-  let slideIndices = [1, 1, 1]; // Initialize an array of indices for each slideshow
+  let slideIndices = [1, 1, 1, 1]; // Initialize an array of indices for each slideshow
   let slideId = ["games4", "games1", "games2", "games3"]; // Corresponding slideshow container IDs
   
   // Initialize the slides
