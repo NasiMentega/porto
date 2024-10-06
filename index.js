@@ -66,7 +66,7 @@ $(document).ready(function(){
   });
 
   let slideIndices = [1, 1, 1]; // Initialize an array of indices for each slideshow
-  let slideId = ["games1", "games2", "games3", "games4"]; // Corresponding slideshow container IDs
+  let slideId = ["games4", "games1", "games2", "games3"]; // Corresponding slideshow container IDs
   
   // Initialize the slides
   for (let i = 0; i < slideId.length; i++) {
